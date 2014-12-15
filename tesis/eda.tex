@@ -1,8 +1,26 @@
 \section{Mapas de la dinámica molecular en nubes de formación estelar muy cercanas}
 
-Actualmente no existe una definición clara de qu\'e es un clúster de estrellas. T\'ecnicas como el cálculo de la distribución de las densidades de la superficie estelar no han dado resultados diferentes para regiones de formación stelar aisladas (\emph{isolated}) y agrupadas (\emph{clustered}). Un enfoque de teoría de grafos, por otro lado, requiere de mucha precisión para lograr el objetivo de determinar qu\'e es un clúster de estrellas, teniendo el ojo humano muchos mejores resultados que los actuales algoritmos en esta materia. Tambi\'en se puede definir un clúster de estrellas basado en la energía de unión (\emph{binding energy}) de un grupo de estrellas. Esto último puede desencadenar en la obtención de asociaciones estelares, un subconjunto de un clúster de estrellas abierto que, para algunos, ya no sería un clúster de estrellas. Como se podrá observar, la definición de qu\'e es un clúster de estrellas puede ser muy difícil, y a menudo es meramente una materia de opinión personal \cite{CSFreview}. 
+Actualmente no existe una definición clara de qu\'e es un clúster de estrellas. T\'ecnicas como el cálculo de la distribución de las densidades de la superficie estelar no han dado resultados diferentes para regiones de formación estelar aisladas (\emph{isolated}) y agrupadas (\emph{clustered}). Un enfoque de teoría de grafos, por otro lado, requiere de mucha precisión para lograr el objetivo de determinar qu\'e es un clúster de estrellas, teniendo el ojo humano muchos mejores resultados que los actuales algoritmos en esta materia. Tambi\'en se puede definir un clúster de estrellas basado en la energía de unión (\emph{binding energy}) de un grupo de estrellas. Esto último puede desencadenar en la obtención de asociaciones estelares, un subconjunto de un clúster de estrellas abierto que, para algunos, ya no sería un clúster de estrellas. Como se podrá observar, la definición de qu\'e es un clúster de estrellas puede ser muy difícil, y a menudo es meramente una materia de opinión personal \cite{CSFreview}. 
 
 La función de masa inicial (\gls{imf}) tampoco entrega mucha información al respecto, mostrándose invariante tanto para densos clústers (\emph{dense clusters}) y asociaciones dispersas (\emph{sparse associations}), como para cúmulos globulares (\emph{globular clusters}) y abiertos (\emph{open clusters}) \cite{CSFreview}.
+
+Una prometedora alternativa a explorar es la multiplicidad estelar, con la cual se puede medir de manera muy exacta múltiples parámetros en clústers. El problema es que comparar las distribuciones medidas de estos parámetros en diferentes clústers no es algo sencillo, dado que la separación observada entre las estrellas de cada uno varía considerablemente. 
+
+La longitud de Jeans (\emph{Jeans length}) corresponde al radio crítico de una nube de polvo interestelar donde su energía t\'ermica (causante de la expansión de la nube) es contrarestada por la gravedad, lo que provoca el colapso de la nube. Matemáticamente se muestra en (\ref{eq:jeansLength}).
+
+\begin{align}\label{eq:jeansLength}
+	\lambda_J &= \sqrt{\frac{15k_BT}{4\pi G\mu\rho}},
+\end{align}
+
+donde $k_B$ corresponde a la constante de Boltzmann, $T$ es la temperatura de la nube, $r$ el radio, $\mu$ la masa por partícula en la nube, $G$ la constante gravitacional y $\rho$ es la densidad de masa de la nube.
+
+Trazando la densidad de la superficie local contra la distancia al vecino más cercano, se puede identificar regímenes binarios frente a una estructura jerárquica general en un clúster. Curiosamente, la separación entre un r\'egimen binario y un clúster al quebrarse la ley de pontencias, es la longitud de Jeans. Este quiebre fue encontrado para Rho Ophiuchi ($\rho Oph$) y para el cúmulo del Trapecio, aunque han sido cuestionados en estudios posteriores. Sin embargo, la estructura puede ser cuantificada de una manera más significativa mediante el parámetro $Q$, el cual divide la distancia media del árbol de expansión mínima (\gls{mst}) de todas las estrellas en un clúster ($\bar{m}$), por la separación media entre las estrellas en el clúster ($\bar{s}$), como se muestra en (\ref{eq:paramQ}):
+
+\begin{align}\label{eq:paramQ}
+	Q &= \frac{\bar{m}}{\bar{s}}.
+\end{align}
+
+Cuando un clúster tiene subestructura, $Q < 0.8$. Si $Q > 0.8$, indica que el clúster está concentrado centralmente.
 
 \section{Estimación de parámetros de zonas de formación estelar muy lejanas}
 
