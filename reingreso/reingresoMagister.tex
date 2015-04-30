@@ -1,0 +1,83 @@
+% Cover letter using letter.cls
+\documentclass{letter} % Uses 10pt
+\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{url}
+% the following commands control the margins:
+\topmargin=-1in    % Make letterhead start about 1 inch from top of page 
+\textheight=8.5in    % text height can be bigger for a longer letter
+\oddsidemargin=0pt   % leftmargin is 1 inch
+\textwidth=6.5in     % textwidth of 6.5in leaves 1 inch for right margin
+
+\begin{document}
+
+\signature{Luis E. Arévalo R.}           % name for signature 
+\longindentation=0pt                       % needed to get closing flush left
+\let\raggedleft\raggedright                % needed to get date flush left
+ 
+ 
+\begin{letter}{Señores y Señoras miembros del comité \\
+Magíster en Ciencias de la Ingeniería Informática \\
+Departamento de Informática \\
+Universidad Técnica Federico Santa María \\
+Avenida España 1680, Valparaíso}
+
+\begin{center}
+{\large\bf Luis E. Arévalo R. \\ 15.558.207-3 \\ 3 de junio de 1983} 
+\end{center}
+\medskip\hrule height 1pt
+\begin{center}
+{Avenida Alemania 5882 \\ Departamento 1801 \\ Valparaíso, Chile \\
+  +56 9 54012831 \\ \url{arevalo@luchox.cl}}
+\end{center} \vfill % forces letterhead to top of page
+ 
+ 
+\opening{Estimado comité:} 
+ 
+\noindent Tengo a bien presentarme ante ustedes para solicitar muy
+humildemente mi reingreso al programa de \textbf{Magíster en Ciencias
+  de la Ingeniería Informática}, el cual hace unos años dejé en
+pendiente luego de aprobar todos sus ramos.
+
+\noindent Al igual como me sucedió con el pregrado, por motivos
+laborales asociados a otros económicos, una vez finalizado gran parte
+del programa dejé pendiente los seminarios y trabajos de título, y por
+consiguiente durante todos estos años me desempeñé laboralmente como
+un licenciado en ciencias de la ingeniería informática.
+
+\noindent Este año 2014, específicamente en el mes de agosto, finalicé
+una de estas etapas pendientes, titulándome como Ingeniero Civil en
+Informática. No finalicé ambos programas pues requería una pronta
+finalización de uno de ellos, optando evidentemente por el pregrado.
+
+\noindent No obstante lo anterior, mi intención siempre ha sido
+finalizar el programa de magíster, dada la constante motivación que he
+encontrado durante mis años de universidad tanto en profesores del
+Departamento de Informática como en profesores de otros departamentos. El poder desarrollar un
+tema de investigación que cumpla con los estándares fijados por este
+excelentísimo comité, sumado a la experiencia que pueda aportar desde
+una arista externa a la universidad (habi\'endome desempeñado tanto en organizaciones públicas como privadas), será un pequeño grano de arena
+con el cual puedo retribuir en algo todo lo que este departamento me
+ha otorgado.
+
+\noindent Es por ello que he acordado con el profesor Luis Salinas y
+con el investigador del departamento, don Mauricio Araya, desarrollar
+un tema bajo el alero de la informática y la astronomía. En lo específico, se evaluará la posibilidad de contribuir desde el ámbito de las ciencias de la informática en áreas de la astronomía. Para ello se utilizará técnicas de computación de alto rendimiento para trabajar en áreas como la estimación de parámetros de zonas de formación estelar muy lejanas y mapas de la dinámica molecular en nubes de formación estelar cercanas.
+
+Si bien se presenta dos áreas de estudio de manera preliminar, la idea es poder definir una de ellas mediante la elaboración de un estado del arte que responda a la interrogante de cuál es el problema en el que se pueda realizar un mayor aporte en base a las competencias ya adquiridas, y aquellas que puedan sumarse por mi parte dada la experiencia de los profesores e investigadores que más cerca tendré durante este trabajo.
+
+Esperando tener una buena recepción, les agradezco de antemano el tiempo y disposición para analizar mi caso. 
+ 
+\closing{Atentamente,} 
+ 
+
+ 
+\encl{Carta de patrocinio}					% Enclosures
+
+\end{letter}
+ 
+
+\end{document}
